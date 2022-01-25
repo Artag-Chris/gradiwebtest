@@ -1,4 +1,10 @@
+como funciona?
+este software es el modelado de un producto de un E-Commerce se puede seleccionar de las opciones que se despliegan en la pantalla para seleccionar el producto mas deseado
+trate de hacerlo lo mas fiel posible a las diapositivas que enviaron en la prueba técnica aunque no del todo. 
 
+fue una experiencia bonita realizar esta prueba muchas gracias y los invito ha mirar otros proyectos de este mi github, siento que pudo ser mucho mejor visualmente pero lastimosamente este fin de semana fue un poco turbio por cuestiones personales,
+
+realice un pequeño despliegue a producción usando netlify el cual pueden visitar aquí https://gradiwebtest.netlify.app/ por si quieren verlo directamente 
 
 Como instalar es software:
 
