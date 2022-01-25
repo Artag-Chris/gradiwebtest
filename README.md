@@ -1,70 +1,44 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Como instalar es software:
 
-In the project directory, you can run:
+Se requiere un pc con Node.js para la instalación de los paquetes npm, Node se puede descargar aquí https://nodejs.org/en/
 
-### `npm start`
+En el link https://github.com/Artag-Chris/gradiwebtest ir a la opción que dice Code darle click y elegir la opción download Zip o clonarlo directamente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+una vez descargado y descomprimirlo es recomendable abrir la carpeta con un editor de código en mi caso Vscode el cual se descarga aqui https://code.visualstudio.com/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Después de abrir la carpeta  usar la terminal en la ubicación gradiwebtest-main/gradiwebtest-main y escribir los comando npm install esperamos que descargue las dependencias
+y por ultimo usar el comando npm start y esto abrirá el software de prueba técnica en el browser.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tecnologías usadas:
 
-### `npm run build`
+Proyecto Hecho con React.js el cual es una librería de Javascript que usa como paradigma de programación orientada a eventos, por esto lo hace muy atrayente para proyectos de Ecommerce por lo fácil que es general buenas experiencias de usuario, su documentación oficial es https://reactjs.org/ los desarrolladores de Meta están detrás de esta librería lo cual hace a React una tecnología muy bien apoyada.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+También se uso Bootstrap 5.0 que ayuda con el diseño responsivo y sus plantillas ayudan mucho a la hora de hacer maquetación. su documentación oficial es https://getbootstrap.com/ este es un Framework de Css que es de los mas usados en el mercado.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Se utilizo Axios que ayuda con las promesas basadas en XMLHttp este software se usa tanto con Node.js como con JavaScript y ayuda muchísimo por que convierte automáticamente la data de los archivos tipo Json personalmente lo he usado siempre en el front-end y por lo regular con Express en el back-end el cual es un Framework de Node.js, su documentación oficial es https://axios-http.com/docs/intro
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Por ultimo se uso React-router-dom que ayuda con las rutas, en este caso solo se utilizan dos rutas pero en proyectos mas grandes este software ayuda muchísimo a que la aplicación escale mas fácil,  su documentación oficial es https://v5.reactrouter.com/web/guides/quick-start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+requisitos:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Solicitar información a un API pública la cual es https://graditest-store.myshopify.com/products/free-trainer-3-mmw.js 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Realizar la maquetación de una ficha del producto, la cual contiene información básica como:
+Nombre
+Precio real
+Precio más alto (%)
+Descripción
+Galería de imágenes
+Variantes de producto (S / M / L) y su respectivo precio
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Realizar un carrusel animado con las imágenes del producto
 
-## Learn More
+Adaptar resultado a las diferentes versiones/tamaños de pantalla (Diseño Responsivo)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Agregar un formulario que nos permita seleccionar una variante del producto. en este caso cree una ruta con todas las variantes del producto y su información la pase a un modal
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Añadir funcionalidad a la acción de <añadir al carrito> mediante un botón. Esta acción/evento debe desplegar un mensaje con título y variante seleccionada. en este caso cree un modal con la foto y la información del producto 
