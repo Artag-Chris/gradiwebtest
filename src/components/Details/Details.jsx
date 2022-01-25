@@ -64,25 +64,25 @@ function Details(test) {
 
             </div>
             <hr className='col-sm-12' />
-            <div className=' container-fluid btn-group'>
-                <div className='container-fluid btn-group d-flex justify-content-around'>
-                    <div className='col-md-6 col-sm-6 d-flex btn-group'>
-                        <button className='col-1 btn btn-outline-primary rounded-3' onClick={() => handleQuantity("dec")}> - </button>
+            <div className=' container-fluid '>
+                <div className='container-fluid  d-flex h-xl-50'>
+                    <div className='col-md-6 col-sm-6  btn-group justify-content-around'>
+                        <button className='col-1 btn btn-outline-primary rounded-3 ' onClick={() => handleQuantity("dec")}> - </button>
                         <button className='col-2 btn btn-outline-primary '> {quantity} </button>
-                        <button className='col-1 btn btn-outline-primary rounded-3' onClick={() => handleQuantity("inc")}> + </button>
+                        <button className='col-1 btn btn-outline-primary rounded-3  ' onClick={() => handleQuantity("inc")}> + </button>
                     </div >
 
-                    <h3 className='col-md-5 col-sm-5 text-end d-flex justify-content-around m-1 p-lg-2'>Total price: ${quantity * price} </h3>
+                    <h3 className='col-md-4  col-sm-5 text-end m-sm-1 p-lg-2'>Total : ${quantity * price} </h3>
 
                 </div>
             </div >
             <br />
-            <hr className='col-sm-12' />
-            <div className='row container-fluid  m-1'>
+            <hr className='col-sm-12 mt-2' />
+            <div className='row container-fluid  m-1 g-0'>
 
-                <Link to="/variants" className="btn btn-secundary col-sm-12 col-md-5 ">lista de variantes </Link>
+                <Link to="/variants" className="btn btn-secundary col-sm-12 col-md-5 m-md-1  btn-outline-primary text-center border   ">Variants </Link>
                 <button onClick={() => handleTotal(price * quantity)} type="button" className="btn btn-dark col-sm-12 col-md-5 m-1" data-bs-toggle="modal" data-bs-target="#exampleModal" >
-                    Agregar al carrito
+                    Add to Cart
                 </button>
                 <Modal total={total} colors={colors} sizes={sizes} title={title} img={img} />
             </div>
