@@ -1,4 +1,5 @@
 como funciona?
+
 este software es el modelado de un producto de un E-Commerce se puede seleccionar de las opciones que se despliegan en la pantalla para seleccionar el producto mas deseado
 trate de hacerlo lo mas fiel posible a las diapositivas que enviaron en la prueba técnica aunque no del todo. 
 
